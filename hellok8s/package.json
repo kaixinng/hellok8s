@@ -1,0 +1,36 @@
+{
+  "name": "hellok8s-hellok8s",
+  "description": "Node.js Google Container Engine sample.",
+  "version": "0.0.1",
+  "private": true,
+  "license": "Apache-2.0",
+  "author": "Google Inc.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GoogleCloudPlatform/nodejs-docs-samples.git"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "start": "node hellok8s.c",
+    "system-test": "repo-tools test app -- hellok8s.c",
+    "test": "npm run system-test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@google-cloud/nodejs-repo-tools": "^3.0.0"
+  },
+  "cloud-repo-tools": {
+    "test": {
+      "app": {
+        "msg": "hello NKX k8s!",
+        "args": [
+          "hellok8s.c"
+        ]
+      }
+    },
+    "requiresKeyFile": true,
+    "requiresProjectId": true
+  }
+}
