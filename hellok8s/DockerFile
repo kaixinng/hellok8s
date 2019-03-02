@@ -1,6 +1,6 @@
 # [START all]
 FROM node:6-alpine
 EXPOSE 8080
-COPY server.js .
-CMD node server.js
+COPY hellok8s.c .
+CMD node hellok8s.c
 # [END all]
